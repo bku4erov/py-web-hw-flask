@@ -1,0 +1,27 @@
+
+@baseUrl = http://localhost:5000/
+
+###
+
+# создание объявления
+POST {{baseUrl}}/adverstisements
+Content-Type: application/json
+
+{
+    "title": "test adv2",
+    "description": "test description2",
+    "owner_id": 1
+}
+
+
+### 
+
+# получить объявление
+GET {{baseUrl}}/adverstisements/1
+Content-Type: application/json
+
+### 
+
+# удалить объявление
+DELETE {{baseUrl}}/adverstisements/2
+Content-Type: application/json
